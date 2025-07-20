@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Property Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar will go here -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Rental Manager</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active" data-section="dashboard">Dashboard</a></li>
+                    <li><a href="#" data-section="properties">Properties</a></li>
+                    <li><a href="#" data-section="tenants">Tenants</a></li>
+                    <li><a href="#" data-section="rent">Rent Tracker</a></li>
+                    <li><a href="#" data-section="bills">Bills</a></li>
+                    <li><a href="#" data-section="reports">Reports</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Main content area -->
+        <div class="main-content">
+            <header class="top-bar">
+                <h2 id="page-title">Dashboard</h2>
+                <div class="user-info">
+                    <span>Admin</span>
+                </div>
+            </header>
+            
+            <div class="content-area">
+                <!-- Dashboard summary cards -->
+                <div class="dashboard-section" id="dashboard-section">
+                    <div class="cards-container">
+                        <div class="card">
+                            <h3>Total Properties</h3>
+                            <p id="total-properties">0</p>
+                        </div>
+                        <div class="card">
+                            <h3>Occupied</h3>
+                            <p id="occupied-properties">0</p>
+                        </div>
+                        <div class="card">
+                            <h3>Rent Due</h3>
+                            <p id="rent-due">$0</p>
+                        </div>
+                        <div class="card">
+                            <h3>Unpaid Bills</h3>
+                            <p id="unpaid-bills">$0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-activity">
+                        <h3>Recent Activity</h3>
+                        <ul id="activity-list">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Other sections (initially hidden) -->
+                <div class="section" id="properties-section" style="display: none;">
+                    <!-- Properties content will go here -->
+                </div>
+                
+                <div class="section" id="tenants-section" style="display: none;">
+                    <!-- Tenants content will go here -->
+                </div>
+                
+                <div class="section" id="rent-section" style="display: none;">
+                    <!-- Rent Tracker content will go here -->
+                </div>
+                
+                <div class="section" id="bills-section" style="display: none;">
+                    <!-- Bills content will go here -->
+                </div>
+                
+                <div class="section" id="reports-section" style="display: none;">
+                    <!-- Reports content will go here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
